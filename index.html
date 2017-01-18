@@ -1,10 +1,22 @@
 <!DOCTYPE html>
+
+
+
 <html>
-<body>
-
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
-</body>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+	<body>
+		<button onClick="coinClick(clickMod)">Click me!</button>
+		<button onClick="buyCursor()">Cost: <span id="cursorCost">10</span></button>
+		
+		<br><span>Coins: </span><span id="coins">0</span>
+		<br><span>Cursors:</span><span id="cursors">0</span>
+		
+		<br><br><button onClick="save()">Save</button>
+		<button onClick="load()">Load</button>
+		<br><button onClick="deleteSave()">Delete Save</button>
+		
+		<script type="text/javascript" src="main.js"></script>
+	</body>
 </html>
