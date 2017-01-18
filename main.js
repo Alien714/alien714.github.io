@@ -18,6 +18,8 @@ function buyCursor() {
 	};
 	var nextCost = Math.floor(10 * Math.pow(1.1,cursors));
 	document.getElementById('cursorCost').innerHTML = nextCost;
+	var cursorCost = nextCost;
+	console.log(cursorCost);
 };
 
 function roundNumbers(input) {
@@ -31,13 +33,13 @@ function save() {
 		cursors: cursors
 	}
 	localStorage.setItem("save",JSON.stringify(save));
-	console.log(cursorCost);
 }
 
 function load() {
 	var savegame = JSON.parse(localStorage.getItem("save"));
 	if (typeof savegame.coins !== "undefined") coins = savegame.coins;
 	if (typeof savegame.cursors !== "undefined") cursors = savegame.cursors;
+		document.getElementById('cursors').innerHTML = cursors;
 }
 
 function deleteSave() {
