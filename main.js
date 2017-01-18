@@ -19,7 +19,6 @@ function buyCursor() {
 	var nextCost = Math.floor(10 * Math.pow(1.1,cursors));
 	document.getElementById('cursorCost').innerHTML = nextCost;
 	var cursorCost = nextCost;
-	console.log(cursorCost);
 };
 
 function roundNumbers(input) {
